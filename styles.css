@@ -1,26 +1,43 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color:blanchedalmond;
+ 
+}
+
+.officer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px; 
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+}
+.item > p {
+    border-style: solid;
+    border-color: antiquewhite;
+    background-color:rgba(253, 253, 253, 0.827);
+    border-width: 3px;
+    padding: 10px;
+    font-size: small;
+}
+
+
 img {
     height: auto;
     width: 200px;
 }
 
-* {
-    outline: 2px brown;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.officer {
-    background-color:blanchedalmond;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 
-}
 
 
 
