@@ -1,7 +1,17 @@
 
+body {
+    background-color: burlywood;
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+}
+
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     background-color:blanchedalmond;
@@ -10,34 +20,67 @@
 
 .officer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
+    gap: 10px;
+    row-gap: 5px;
 }
 
 .item {
+        flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 250px; 
         text-align: center;
-        padding: 30px;
+        padding: 40px;
+        padding-bottom: 30px;
         border-radius: 8px;
 }
-.item > p {
+.item > p{
     border-style: solid;
+    background-color: rgb(255, 228, 192);
     border-color: antiquewhite;
-    background-color:rgba(253, 253, 253, 0.827);
+    color: rgb(35, 35, 35);
     border-width: 3px;
     padding: 10px;
-    font-size: small;
 }
 
+.item > h3{
+    letter-spacing: 3px;
+
+
+}
 
 img {
     height: auto;
     width: 200px;
 }
 
+h1, h2 {
+    text-align: center;
+}
 
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 
+.navbar a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
 
+.navbar li{
+    float: left;
+
+ }
+.navbar a:hover{
+    background-color: rgba(182, 178, 178, 0.167);
+}
