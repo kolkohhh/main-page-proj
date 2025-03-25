@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-color: burlywood;
     margin: 0;
@@ -10,12 +12,23 @@ main {
 
 .container {
     display: flex;
+    margin: 50px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     background-color:blanchedalmond;
  
+}
+.container  h1, h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
+
+}
+.container img {
+    height: auto;
+    width: 200px;
 }
 
 .officer {
@@ -26,61 +39,90 @@ main {
     row-gap: 5px;
 }
 
+
+
 .item {
-        flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 250px; 
+        flex-wrap: wrap;
         text-align: center;
-        padding: 40px;
+        padding: 0px;
         padding-bottom: 30px;
         border-radius: 8px;
 }
+
+
+
 .item > p{
     border-style: solid;
     background-color: rgb(255, 228, 192);
+    font-family: monospace;
     border-color: antiquewhite;
     color: rgb(35, 35, 35);
+    width: 73%;
     border-width: 3px;
     padding: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.item > h3{
-    letter-spacing: 3px;
 
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: rgb(69, 69, 69);
+}
+
+header > h1 {
+    font-family: "Montserrat", sans-serif;
 
 }
 
-img {
-    height: auto;
-    width: 200px;
+
+
+.navbar{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 0px;
+    text-decoration: none;
 }
 
-h1, h2 {
-    text-align: center;
+
+
+
+.logo {
+    font-family: "Montserrat", sans-serif;
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
+.navbar li{
+    display: inline-block;
+    padding: 0px 0px;
 
-.navbar a{
-    color: antiquewhite;
+ }
+
+ .navbar li a{
+    color: rgb(227, 227, 227);
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
 }
 
-.navbar li{
-    float: left;
 
- }
-.navbar a:hover{
+.navbar li a:hover{
     background-color: rgba(182, 178, 178, 0.167);
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-gap: 1rem;
 }
